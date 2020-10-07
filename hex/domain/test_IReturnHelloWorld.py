@@ -1,4 +1,4 @@
-from hex.domain.IReturnHelloWorld import main
+from hex.domain.IReturnHelloWorld import helloWorld
 
-def test_main():
-    assert main() == 'Hello World'
+def test():
+    assert helloWorld() == 'Hello World'

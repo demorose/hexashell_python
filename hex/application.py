@@ -1,4 +1,4 @@
-from adapters.driving.flask import create_application
+from adapters.driving.flask.flask import create_application
 from hex.configure import configure_inject
 
 

@@ -1,2 +1,2 @@
-def main():
+def helloWorld():
     return 'Hello World'
