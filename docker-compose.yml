@@ -1,0 +1,19 @@
+version: '2.4'
+
+services:
+  flask:
+    build: ./docker/python
+    restart: always
+    command: bash ./docker/python/entrypoint.sh
+    volumes:
+      - ./:/usr/src:rw,cached
+    ports:
+        - "8080:8080"
+
+  nginx:
+    build: ./docker/nginx
+    restart: always
+    depends_on:
+        - flask
+    ports:
+      - "80:80"

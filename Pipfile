@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 flask = "*"
 inject = "*"
+uwsgi = "*"
 
 [dev-packages]
 pytest = "*"
@@ -13,4 +14,4 @@ python-dotenv = "*"
 pylint = "*"
 
 [requires]
-python_version = "3.8"
+python_version = "3.9"
